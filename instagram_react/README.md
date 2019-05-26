@@ -1,6 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
+`npm run start` - Run application client
 
 `npm run server` - Turns on API
 
