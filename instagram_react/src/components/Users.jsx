@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import User from './User.jsx'
 import InstaService from '../services/instaservice'
-import img from '../error.png'
 
 export default class Users extends Component {
   InstaService = new InstaService()
