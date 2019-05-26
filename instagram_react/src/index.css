@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    height: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: block;
+}
+
+.logo img {
+    width: 60px;
+    -webkit-filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+.h-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul li {
+    margin: 0 20px;
+}
+
+.menu__links {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.feed {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.left {
+    max-width: 850px;
+}
+
+.post {
+    margin-bottom: 70px;
+    width: 650px;
+    min-height: 560px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.post .user {
+    margin: 12px 12px;
+}
+
+.post > img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.post__name {
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.post__descr {
+    padding: 0 20px;
+    margin: 0px 0 20px 0;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.user img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 1px solid rgb(201, 46, 140);
+}
+
+.user div {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.min {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 7px 0;
+}
+
+.min img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.min div {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.users__block {
+    margin-top: 20px;
+    padding: 20px;
+    width: 265px;
+    min-height: 260px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.profile {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.palette {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.palette img {
+    width: calc(100%/3 - 60px);
+    margin: 10px;
+    height: 300px;
+    object-fit: cover;
+}
