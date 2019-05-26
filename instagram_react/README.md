@@ -1,5 +1,6 @@
 ## Available Scripts
 `npm run start` - Run application client
+
 `npm run server` - Turns on API
 
 ### Before starting the application run next command:
