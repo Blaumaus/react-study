@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import User from './User.jsx'
 import InstaService from '../services/instaservice'
 import ErrorMessage from './ErrorMessage.jsx'
+import Spinner from './Spinner.jsx'
 
 export default class Posts extends Component {
   InstaService = new InstaService()
 
   state = {
     posts: [],
-    error: false
+    error: false,
+    spinner: true
   }
 
   componentDidMount() {
@@ -22,11 +24,17 @@ export default class Posts extends Component {
   }
 
   onPostsLoaded = posts => {
-    this.setState({ posts })
+    this.setState({ 
+      posts,
+      spinner: false
+    })
   }
 
   onError = e => {
-    this.setState({ error: true })
+    this.setState({ 
+      error: true,
+      spinner: false
+    })
   }
 
   renderItems(arr) {
@@ -45,8 +53,9 @@ export default class Posts extends Component {
   }
 
   render() {
-    const { error, posts } = this.state
+    const { error, posts, spinner } = this.state
     if (error) return <ErrorMessage />
+    if (spinner) return <Spinner />
 
     const items = this.renderItems(posts)
     

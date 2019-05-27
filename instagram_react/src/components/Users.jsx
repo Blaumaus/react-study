@@ -15,12 +15,12 @@ export default class Users extends Component {
   }
 
   updatePosts() {
-    this.InstaService.getAllPosts()
-      .then(this.onPostsLoaded)
+    this.InstaService.getAllUsers()
+      .then(this.onUsersLoaded)
       .catch(this.onError)
   }
 
-  onPostsLoaded = users => {
+  onUsersLoaded = users => {
     this.setState({ users })
   }
 
@@ -30,9 +30,9 @@ export default class Users extends Component {
 
   renderItems(arr) {
     return arr.map(item => {
-      const { name, photo, altname } = item
+      const { name, photo, altname, id } = item
       return (
-        <User src={photo} alt={altname} name={name} min />
+        <User key={id} src={photo} alt={altname} name={name} min />
       )
     })
   }
