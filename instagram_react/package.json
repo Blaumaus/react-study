@@ -5,14 +5,17 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-router-dom": "5.0.0",
+    "react-scripts": "3.0.1",
+    "serve": "11.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch src/posts.json --port 3004"
+    "server": "json-server --watch src/posts.json --port 3004",
+    "serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
