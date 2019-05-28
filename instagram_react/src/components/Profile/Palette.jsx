@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ErrorMessage from './ErrorMessage.jsx'
-import InstaService from '../services/instaservice'
-import Spinner from './Spinner.jsx'
+import ErrorMessage from '../Other/ErrorMessage.jsx'
+import InstaService from '../../services/instaservice'
+import Spinner from '../Other/Spinner.jsx'
 
 export default class Palette extends Component {
   InstaService = new InstaService()

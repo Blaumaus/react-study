@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import User from './User.jsx'
-import InstaService from '../services/instaservice'
-import ErrorMessage from './ErrorMessage.jsx'
-import Spinner from './Spinner.jsx'
+import InstaService from '../../services/instaservice'
+import ErrorMessage from '../Other/ErrorMessage.jsx'
+import Spinner from '../Other/Spinner.jsx'
 
 export default class Posts extends Component {
   InstaService = new InstaService()

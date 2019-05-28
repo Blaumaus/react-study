@@ -1,5 +1,5 @@
 import React from 'react'
-import User from './User.jsx'
+import User from '../MainPage/User.jsx'
 import Palette from './Palette.jsx'
 
 export default function Profile () {

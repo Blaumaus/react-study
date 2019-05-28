@@ -1,5 +1,5 @@
 import React from 'react'
-import spinnerImage from '../images/spinner.gif'
+import spinnerImage from '../../images/spinner.gif'
 
 export default function Spinner() {
   return (
