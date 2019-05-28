@@ -3,6 +3,6 @@ import img from '../../images/error.png'
 
 export default function ErrorMessage() {
   return (
-    <img src={img} alt="Error image" />
+    <img src={img} alt="Something went wrong, buddy." />
   )
 }
