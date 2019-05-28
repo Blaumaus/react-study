@@ -1,3 +1,8 @@
+Coding this project I learn such React features as:
+ - React routing
+ - JSON-Server
+ - Work with services
+
 ## Available Scripts
 `npm run start` - Run application client
 
