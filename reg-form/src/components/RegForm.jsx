@@ -80,18 +80,19 @@ export default class RegForm extends Component {
     } else return false
   }
 
-  checkHandler = () => {
-    this.setState({ policy: !this.state.policy })
+  checkHandler = e => {
+    this.setState({ policy: e.target.checked })
   }
 
   confPassHandler = p => this.setState({ conf_pass: p.target.value })
 
   validateForm = () => {
-    const { email_valid, tel_valid, pass_valid, policy } = this.state
-
-    if (email_valid && tel_valid && pass_valid && policy) {
-      this.setState({ sendable: true })
-    } else this.setState({ sendable: false })
+    this.setState((state) => {
+      const { email_valid, tel_valid, pass_valid, policy } = state
+        if (email_valid && tel_valid && pass_valid && policy) {
+          return { sendable: true }
+        } else return { sendable: false }
+      })
   }
 
   submit = e => {
@@ -110,7 +111,7 @@ export default class RegForm extends Component {
           <div className="form_header">
             <p>РЕГИСТРАЦИЯ</p>
           </div>
-          <form onSubmit={this.submit} onChange={this.validateForm}>
+          <form onSubmit={this.submit} onChange={() => this.validateForm()}>
             <div className="el">
               <label className="text_input">
                 <p>E-mail</p>
